@@ -4,55 +4,83 @@
             <element>difficulty</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-09 11:02:09</sys_created_on>
-            <sys_id>fdddf2df47302110a8a67af3836d439c</sys_id>
+            <sys_created_on>2023-02-09 13:13:50</sys_created_on>
+            <sys_id>fefb9b9f47b02110a8a67af3836d43a8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_965810_zombie_game" sys_domain="global" view="Default view">246bba1f47302110a8a67af3836d43d1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-09 11:02:09</sys_updated_on>
+            <sys_updated_on>2023-02-09 13:13:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>current_turn</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-09 13:13:50</sys_created_on>
+            <sys_id>72fb9b9f47b02110a8a67af3836d43a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_965810_zombie_game" sys_domain="global" view="Default view">246bba1f47302110a8a67af3836d43d1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-09 13:13:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-09 11:02:09</sys_created_on>
-            <sys_id>71ddf2df47302110a8a67af3836d439d</sys_id>
+            <sys_created_on>2023-02-09 13:13:50</sys_created_on>
+            <sys_id>f2fb9b9f47b02110a8a67af3836d43a9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_965810_zombie_game" sys_domain="global" view="Default view">246bba1f47302110a8a67af3836d43d1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-09 11:02:09</sys_updated_on>
+            <sys_updated_on>2023-02-09 13:13:50</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>player</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-09 11:02:09</sys_created_on>
-            <sys_id>f1ddf2df47302110a8a67af3836d439d</sys_id>
+            <sys_created_on>2023-02-09 13:13:50</sys_created_on>
+            <sys_id>76fb9b9f47b02110a8a67af3836d43a9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_965810_zombie_game" sys_domain="global" view="Default view">246bba1f47302110a8a67af3836d43d1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-09 11:02:09</sys_updated_on>
+            <sys_updated_on>2023-02-09 13:13:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-09 13:13:50</sys_created_on>
+            <sys_id>f6fb9b9f47b02110a8a67af3836d43a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_965810_zombie_game" sys_domain="global" view="Default view">246bba1f47302110a8a67af3836d43d1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-09 13:13:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>3</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-09 11:02:09</sys_created_on>
-            <sys_id>75ddf2df47302110a8a67af3836d439d</sys_id>
+            <sys_created_on>2023-02-09 13:13:50</sys_created_on>
+            <sys_id>7afb9b9f47b02110a8a67af3836d43a9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_965810_zombie_game" sys_domain="global" view="Default view">246bba1f47302110a8a67af3836d43d1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-09 11:02:09</sys_updated_on>
+            <sys_updated_on>2023-02-09 13:13:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

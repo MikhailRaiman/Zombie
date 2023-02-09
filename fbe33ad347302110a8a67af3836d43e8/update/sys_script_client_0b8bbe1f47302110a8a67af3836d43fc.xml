@@ -16,6 +16,7 @@
         g_form.setValue('player', g_user.userID);
 		g_form.setReadOnly('player', true);
 		g_form.setVisible('state', false);
+		g_form.setVisible('current_turn', false);
     }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="2b643a1747302110a8a67af3836d43f0" label="Game" max_length="40" name="x_965810_zombie_game" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="3" default="10" label="Difficulty" max_length="40" name="difficulty" type="choice">
+        <element default="0" label="Current Turn" max_length="40" name="current_turn" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="100" label="Difficulty" max_length="40" name="difficulty" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Easy" sequence="1" value="10"/>
                 <element inactive_on_update="false" label="Normal" sequence="2" value="100"/>
                 <element inactive_on_update="false" label="Hard" sequence="3" value="300"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="ID" max_length="40" name="id" read_only="true" type="string" use_dynamic_default="true"/>
         <element attributes="encode_utf8=false" label="Player" mandatory="true" max_length="32" name="player" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="string">
             <choice>

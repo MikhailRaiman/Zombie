@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="number" label="Number" language="en" table="x_965810_zombie_game">
+    <sys_documentation element="current_turn" label="Current Turn" language="en" table="x_965810_zombie_game">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>current_turn</element>
             <help/>
             <hint/>
-            <label>Number</label>
+            <label>Current Turn</label>
             <language>en</language>
             <name>x_965810_zombie_game</name>
-            <plural>Numbers</plural>
+            <plural>Current Turns</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-09 10:21:03</sys_created_on>
-            <sys_name>Number</sys_name>
+            <sys_created_on>2023-02-09 13:13:12</sys_created_on>
+            <sys_name>Current Turn</sys_name>
             <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
             <sys_policy/>
             <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
-            <sys_update_name>sys_documentation_x_965810_zombie_game_number_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_965810_zombie_game_current_turn_en</sys_update_name>
             <url/>
             <url_target/>
         </sys_documentation>
