@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_965810_zombie_game">x_965810_zombie_game</category>
+        <maximum_digits>7</maximum_digits>
+        <number>0</number>
+        <prefix>GAM</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 10:21:03</sys_created_on>
+        <sys_id>77647a1747302110a8a67af3836d4351</sys_id>
+        <sys_name>GAM</sys_name>
+        <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
+        <sys_update_name>sys_number_77647a1747302110a8a67af3836d4351</sys_update_name>
+    </sys_number>
+</record_update>
