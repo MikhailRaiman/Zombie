@@ -11,7 +11,7 @@
         <column_label>Difficulty</column_label>
         <comments/>
         <create_roles/>
-        <default_value>100</default_value>
+        <default_value>300</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>

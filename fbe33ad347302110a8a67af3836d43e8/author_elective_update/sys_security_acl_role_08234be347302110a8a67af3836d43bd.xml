@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 06:03:43</sys_created_on>
+        <sys_id>08234be347302110a8a67af3836d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_965810_zombie_zombie.x_965810_zombie.player</sys_name>
+        <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
+        <sys_security_acl display_value="x_965810_zombie_zombie">00234be347302110a8a67af3836d43bb</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_08234be347302110a8a67af3836d43bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-10 06:03:43</sys_updated_on>
+        <sys_user_role display_value="x_965810_zombie.player" name="x_965810_zombie.player">9714ba9347302110a8a67af3836d4324</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</application>
+        <file_path/>
+        <instance_id>8983c949db3e341052cec597059619ac</instance_id>
+        <instance_name>dev119739</instance_name>
+        <name>sys_security_acl_role_08234be347302110a8a67af3836d43bd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-10 06:03:43</sys_created_on><sys_id>08234be347302110a8a67af3836d43bd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_965810_zombie_zombie.x_965810_zombie.player</sys_name><sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package><sys_policy/><sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope><sys_security_acl display_value="x_965810_zombie_zombie">00234be347302110a8a67af3836d43bb</sys_security_acl><sys_update_name>sys_security_acl_role_08234be347302110a8a67af3836d43bd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-10 06:03:43</sys_updated_on><sys_user_role display_value="x_965810_zombie.player" name="x_965810_zombie.player">9714ba9347302110a8a67af3836d4324</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1541057291</payload_hash>
+        <record_name>x_965810_zombie_zombie.x_965810_zombie.player</record_name>
+        <reverted_from/>
+        <source>7291839347702110a8a67af3836d4382</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 06:03:43</sys_created_on>
+        <sys_id>88234be347302110a8a67af3836d43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18639ec28a10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-10 06:03:43</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>c0234be322302110a1067a32ebecc9bf</update_guid>
+        <update_guid_history>c0234be322302110a1067a32ebecc9bf:-1541057291</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_965810_zombie_zombie.x_965810_zombie.player">2a434fe347302110a8a67af3836d43b7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 06:04:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>098e2313600948cd996f8a9a886635f9</sys_id>
+        <sys_metadata>08234be347302110a8a67af3836d43bd</sys_metadata>
+        <sys_name>x_965810_zombie_zombie.x_965810_zombie.player</sys_name>
+        <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
+        <sys_parent display_value="">00234be347302110a8a67af3836d43bb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
+        <sys_scope_delete display_value="">03df09a3034c4d0097393ec494090000</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_08234be347302110a8a67af3836d43bd</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_08234be347302110a8a67af3836d43bd">88234be347302110a8a67af3836d43bf</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

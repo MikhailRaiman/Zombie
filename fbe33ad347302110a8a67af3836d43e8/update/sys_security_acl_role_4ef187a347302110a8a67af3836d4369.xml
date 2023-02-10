@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 05:58:40</sys_created_on>
+        <sys_id>4ef187a347302110a8a67af3836d4369</sys_id>
+        <sys_name>x_965810_zombie_creature.x_965810_zombie.player</sys_name>
+        <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
+        <sys_security_acl display_value="x_965810_zombie_creature">46f187a347302110a8a67af3836d4367</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4ef187a347302110a8a67af3836d4369</sys_update_name>
+        <sys_user_role display_value="x_965810_zombie.player" name="x_965810_zombie.player">9714ba9347302110a8a67af3836d4324</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

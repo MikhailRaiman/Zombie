@@ -2,7 +2,7 @@
     <element db_object_id="1c440b5747702110a8a67af3836d4326" extends="x_965810_zombie_game" label="Turn" max_length="40" name="x_965810_zombie_turn" type="collection">
         <element label="Citizens" max_length="40" name="citizens" read_only="true" type="integer"/>
         <element label="Game" max_length="32" name="game" reference="x_965810_zombie_game" type="reference"/>
-        <element default="0" label="Turn" max_length="40" name="number" read_only="true" type="integer"/>
+        <element default="0" label="Number" max_length="40" name="number" read_only="true" type="integer"/>
         <element label="Zombies" max_length="40" name="zombies" read_only="true" type="integer"/>
         <index name="index">
             <element name="game"/>

@@ -2,17 +2,45 @@
     <sys_ui_related sys_domain="global" table="x_965810_zombie_game" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Game - Default view" name="x_965810_zombie_game" related_list="NULL" sys_domain="global" view="Default view">82170f1b47702110a8a67af3836d43bd</list_id>
+            <list_id display_value="Game - Default view" name="x_965810_zombie_game" related_list="NULL" sys_domain="global" view="Default view">6f76cb2747302110a8a67af3836d43bd</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_965810_zombie_turn.game</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-09 11:42:35</sys_created_on>
-            <sys_id>8e170f1b47702110a8a67af3836d43be</sys_id>
+            <sys_created_on>2023-02-10 06:18:25</sys_created_on>
+            <sys_id>237643e747302110a8a67af3836d4341</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-09 11:42:35</sys_updated_on>
+            <sys_updated_on>2023-02-10 06:18:25</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Game - Default view" name="x_965810_zombie_game" related_list="NULL" sys_domain="global" view="Default view">6f76cb2747302110a8a67af3836d43bd</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_965810_zombie_citizen.game</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-10 06:18:25</sys_created_on>
+            <sys_id>6b7643e747302110a8a67af3836d4341</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-10 06:18:25</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Game - Default view" name="x_965810_zombie_game" related_list="NULL" sys_domain="global" view="Default view">6f76cb2747302110a8a67af3836d43bd</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_965810_zombie_zombie.game</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-10 06:18:25</sys_created_on>
+            <sys_id>6f7643e747302110a8a67af3836d4341</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-10 06:18:25</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Game - Default view</calculated_name>
@@ -23,10 +51,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-09 11:42:34</sys_created_on>
+            <sys_created_on>2023-02-10 06:18:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>82170f1b47702110a8a67af3836d43bd</sys_id>
+            <sys_id>6f76cb2747302110a8a67af3836d43bd</sys_id>
             <sys_name>Game - Default view</sys_name>
             <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
             <sys_policy/>

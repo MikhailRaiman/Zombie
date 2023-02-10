@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>!current.isNewRecord()</condition>
+        <condition>!current.isNewRecord() &amp;&amp; current.getValue('state') == 1</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -30,42 +30,90 @@
         <name>Next Day</name>
         <onclick>onNextDayClicked()</onclick>
         <order>100</order>
-        <script><![CDATA[const prevTurn = +current.getValue('current_turn');
+        <script><![CDATA[action.setRedirectURL(current);
+const prevTurn = +current.getValue('current_turn');
 const turnsGr = new GlideRecord('x_965810_zombie_turn');
-turnsGr.addQuery('game', current.getUniqueValue());
-turnsGr.addQuery('number', prevTurn.toString());
-gs.info('!!!!!!!' + prevTurn);
-turnsGr.query();
-turnsGr.next();
-gs.info('turnsGr: ' + turnsGr.getRowCount());
-let citizens = +turnsGr.getValue('citizens');
-citizens = citizens - Math.round(Math.random() * 20);
-let zombies = +turnsGr.getValue('zombies');
-zombies = zombies - Math.round(Math.random() * 5);
-citizens = citizens < 0 ? 0 : citizens;
-zombies = zombies < 0 ? 0 : zombies;
-gs.info('citizens: ' + citizens + ', zombies: ' + zombies);
+let zoGr = new GlideRecord('x_965810_zombie_zombie');
+let czGr = new GlideRecord('x_965810_zombie_citizen');
+czGr.addQuery('game', current.getUniqueValue());
+czGr.query();
+zoGr.addQuery('game', current.getUniqueValue());
+zoGr.query();
 
-if (citizens > 0 && zombies > 0) {
-    const newTurn = new GlideRecord('x_965810_zombie_turn');
-    newTurn.initialize();
-    newTurn.setValue('game', current.getUniqueValue());
-    newTurn.setValue('number', prevTurn + 1);
-    newTurn.setValue('citizens', citizens);
-    newTurn.setValue('zombies', zombies);
-	newTurn.insert();
-} else {
-    if (citizens == 0) {
-        current.setValue('state', 3);
-    } else {
-        current.setValue('state', 2);
+if (zoGr.hasNext() && czGr.hasNext()) {
+    const citizens = [];
+    while (czGr.next()) {
+        citizens.push({
+            name: czGr.getValue('name'),
+            sys_id: czGr.getUniqueValue()
+        });
     }
-}
-current.setValue('current_turn', prevTurn + 1);
-action.setRedirectURL(current);
-current.update();
+    turnsGr.addQuery('game', current.getUniqueValue());
+    turnsGr.addQuery('number', prevTurn.toString());
+    turnsGr.query();
+    turnsGr.next();
 
-]]></script>
+    while (zoGr.next()) {
+        const randPick = Math.floor(Math.random() * citizens.length);
+        const randCz = citizens[randPick];
+        const czDice = Math.round(Math.random() * 6);
+        const zoDice = Math.round(Math.random() * 6);
+        if (czDice < zoDice) {
+            randCz.dead = true;
+            if (Math.random() < 0.5) {
+                const newZombie = new GlideRecord('x_965810_zombie_zombie');
+                newZombie.initialize();
+                newZombie.setValue('name', 'Minion Zombie');
+                newZombie.setValue('game', current.getUniqueValue());
+                newZombie.insert();
+            }
+        } else if (czDice > zoDice) {
+            zoGr.deleteRecord();
+        } else {
+            randCz.dead = true;
+            zoGr.deleteRecord();
+        }
+    }
+    zoGr = new GlideRecord('x_965810_zombie_zombie');
+    czGr = new GlideRecord('x_965810_zombie_citizen');
+	czGr.addQuery('game', current.getUniqueValue());
+	zoGr.addQuery('game', current.getUniqueValue());
+    zoGr.query();
+    czGr.query();
+    let citizensCount = 0;
+    while (czGr.next()) {
+        const citizen = citizens.find(cz => cz.sys_id === czGr.getUniqueValue());
+        if (citizen.dead) {
+            //gs.info('line 45');
+            czGr.deleteRecord();
+        } else {
+            citizensCount++;
+        }
+    }
+    let zombiesCount = 0;
+    if (zoGr.hasNext()) {
+        zombiesCount = zoGr.getRowCount();
+    }
+    if (citizensCount > 0 && zombiesCount > 0) {
+        const newTurn = new GlideRecord('x_965810_zombie_turn');
+        newTurn.initialize();
+        newTurn.setValue('game', current.getUniqueValue());
+        newTurn.setValue('number', prevTurn + 1);
+        newTurn.setValue('citizens', citizensCount);
+        newTurn.setValue('zombies', zombiesCount);
+        newTurn.insert();
+    } else {
+        if (citizensCount == 0) {
+            current.setValue('state', 3);
+            gs.addInfoMessage('Zombies eat everybody...');
+        } else {
+            current.setValue('state', 2);
+            gs.addInfoMessage('Citizens WIN!');
+        }
+    }
+    current.setValue('current_turn', prevTurn + 1);
+    current.update();
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>

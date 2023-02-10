@@ -29,15 +29,34 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-	const turnsGr = new GlideRecord('x_965810_zombie_turn');
-	turnsGr.initialize();
-	turnsGr.setValue('game', current.getUniqueValue());
-	turnsGr.setValue('zombies', current.getValue('difficulty'));
-	turnsGr.setValue('citizens', 300);
-	turnsGr.insert();
-
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	const difficulty = current.getValue('difficulty');
+    const turnsGr = new GlideRecord('x_965810_zombie_turn');
+    turnsGr.initialize();
+    turnsGr.setValue('game', current.getUniqueValue());
+    turnsGr.setValue('zombies', difficulty);
+    const usersGr = new GlideRecord('sys_user');
+    usersGr.addActiveQuery();
+    usersGr.query();
+	let numCitizens = 0;
+    while (usersGr.next()) {
+		numCitizens++;
+        const czGr = new GlideRecord('x_965810_zombie_citizen');
+		czGr.initialize();
+		czGr.setValue('name', usersGr.getValue('first_name') + ' ' + usersGr.getValue('last_name'));
+		czGr.setValue('game', current.getUniqueValue());
+		czGr.insert();
+    }
+	turnsGr.setValue('citizens', numCitizens);
+    turnsGr.insert();
+	for (let i = 0; i < difficulty; i++) {
+		const zoGr = new GlideRecord('x_965810_zombie_zombie');
+		zoGr.initialize();
+		zoGr.setValue('name', 'Zombie');
+		zoGr.setValue('game', current.getUniqueValue());
+		zoGr.insert();
+	}
+	action.setRedirectURL(current);
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>

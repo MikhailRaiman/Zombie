@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2532cb6347302110a8a67af3836d4361" extends="x_965810_zombie_creature" label="Citizen" max_length="40" name="x_965810_zombie_citizen" type="collection">
+        <element label="Game" max_length="32" name="game" reference="x_965810_zombie_game" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="game"/>
+        </index>
+    </element>
+</database>

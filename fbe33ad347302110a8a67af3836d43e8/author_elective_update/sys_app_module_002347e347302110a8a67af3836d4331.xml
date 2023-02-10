@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Zombie Apocalypse">a6747a5347302110a8a67af3836d4399</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Zombies</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_965810_zombie_zombie</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_965810_zombie.player</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 06:03:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>002347e347302110a8a67af3836d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zombies</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
+        <sys_update_name>sys_app_module_002347e347302110a8a67af3836d4331</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-10 06:03:43</sys_updated_on>
+        <timeline_page/>
+        <title>Zombies</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</application>
+        <file_path/>
+        <instance_id>8983c949db3e341052cec597059619ac</instance_id>
+        <instance_name>dev119739</instance_name>
+        <name>sys_app_module_002347e347302110a8a67af3836d4331</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Zombie Apocalypse">a6747a5347302110a8a67af3836d4399</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Zombies</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_965810_zombie_zombie</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_965810_zombie.player</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-10 06:03:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>002347e347302110a8a67af3836d4331</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Zombies</sys_name><sys_overrides/><sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package><sys_policy/><sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope><sys_update_name>sys_app_module_002347e347302110a8a67af3836d4331</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-10 06:03:43</sys_updated_on><timeline_page/><title>Zombies</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>2140534197</payload_hash>
+        <record_name>Zombies</record_name>
+        <reverted_from/>
+        <source>7291839347702110a8a67af3836d4382</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 06:03:43</sys_created_on>
+        <sys_id>cc2347e347302110a8a67af3836d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18639ec27de0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-10 06:03:43</sys_updated_on>
+        <type>Module</type>
+        <update_guid>082347e36c30211023a68fe17a490732</update_guid>
+        <update_guid_history>082347e36c30211023a68fe17a490732:2140534197</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Zombies">fe434fe347302110a8a67af3836d43f3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 06:04:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2ac5f3d79c67406fb4777819bda7b289</sys_id>
+        <sys_metadata>002347e347302110a8a67af3836d4331</sys_metadata>
+        <sys_name>Zombies</sys_name>
+        <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
+        <sys_scope_delete display_value="">03df09a3034c4d0097393ec494090000</sys_scope_delete>
+        <sys_update_name>sys_app_module_002347e347302110a8a67af3836d4331</sys_update_name>
+        <sys_update_version display_value="sys_app_module_002347e347302110a8a67af3836d4331">cc2347e347302110a8a67af3836d4332</sys_update_version>
+    </sys_metadata_delete>
+</record_update>
