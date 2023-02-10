@@ -45,6 +45,9 @@ if (zoGr.hasNext() && czGr.hasNext()) {
     while (czGr.next()) {
         citizens.push({
             name: czGr.getValue('name'),
+			power: +czGr.getValue('power'),
+			hp: +czGr.getValue('hp'),
+			kills: +czGr.getValue('kills'),
             sys_id: czGr.getUniqueValue()
         });
     }
@@ -56,23 +59,36 @@ if (zoGr.hasNext() && czGr.hasNext()) {
     while (zoGr.next()) {
         const randPick = Math.floor(Math.random() * citizens.length);
         const randCz = citizens[randPick];
-        const czDice = Math.round(Math.random() * 6);
-        const zoDice = Math.round(Math.random() * 6);
-        if (czDice < zoDice) {
-            randCz.dead = true;
-            if (Math.random() < 0.5) {
-                const newZombie = new GlideRecord('x_965810_zombie_zombie');
-                newZombie.initialize();
-                newZombie.setValue('name', 'Minion Zombie');
-                newZombie.setValue('game', current.getUniqueValue());
-                newZombie.insert();
-            }
-        } else if (czDice > zoDice) {
-            zoGr.deleteRecord();
-        } else {
-            randCz.dead = true;
-            zoGr.deleteRecord();
-        }
+        const czDice = Math.round(Math.random() * 6) + randCz.power;
+        const zoDice = Math.round(Math.random() * 6) + +zoGr.getValue('power');
+		let zoHp = +zoGr.getValue('hp');
+		if (czDice < zoDice) {
+			randCz.hp = randCz.hp - zoDice * 10;
+			zoHp = zoHp - czDice * 5;
+		} else {
+			randCz.hp = randCz.hp - zoDice * 5;
+			zoHp = zoHp - czDice * 10;
+		}
+		
+		randCz.dead = randCz.hp <= 0;
+		if (zoHp <= 0) {
+			zoGr.deleteRecord();
+			randCz.kills++;
+		} else {
+			zoGr.setValue('hp', zoHp);			
+			if (randCz.dead) {
+				zoGr.setValue('kills', +zoGr.getValue('kills') + 1);
+				if (Math.random() < 0.5) {
+					const newZombie = new GlideRecord('x_965810_zombie_zombie');
+					newZombie.initialize();
+					newZombie.setValue('name', 'Minion Zombie');
+					newZombie.setValue('power', 1);
+					newZombie.setValue('game', current.getUniqueValue());
+					newZombie.insert();
+				}
+			}
+			zoGr.update();
+		}
     }
     zoGr = new GlideRecord('x_965810_zombie_zombie');
     czGr = new GlideRecord('x_965810_zombie_citizen');
@@ -84,9 +100,18 @@ if (zoGr.hasNext() && czGr.hasNext()) {
     while (czGr.next()) {
         const citizen = citizens.find(cz => cz.sys_id === czGr.getUniqueValue());
         if (citizen.dead) {
-            //gs.info('line 45');
-            czGr.deleteRecord();
+			gs.info('current.avatar.sys_id: ' + current.avatar.sys_id + ', citizen.sys_id: ' + citizen.sys_id);
+			czGr.deleteRecord();
+			if (citizen.sys_id.toString() === current.avatar.sys_id.toString()) {
+				gs.info('player was killed');
+				current.setValue('state', 3);
+				current.update();
+				gs.addInfoMessage('Game over. You was killed by zombie :/');
+			}
         } else {
+			czGr.setValue('hp', citizen.hp);
+			czGr.setValue('kills', citizen.kills);
+			czGr.update();
             citizensCount++;
         }
     }

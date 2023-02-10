@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_list parent="x_965810_zombie_game" relationship="" sys_domain="global" table="x_965810_zombie_citizen" version="2" view="">
+    <sys_ui_list parent="x_965810_zombie_game" relationship="" sys_domain="global" table="x_965810_zombie_zombie" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_965810_zombie_citizen" element="NULL" name="x_965810_zombie_citizen" parent="x_965810_zombie_game" relationship="NULL" sys_domain="global" view="Default view">999004f347342110a8a67af3836d4364</list_id>
+            <list_id display_value="x_965810_zombie_zombie" element="NULL" name="x_965810_zombie_zombie" parent="x_965810_zombie_game" relationship="NULL" sys_domain="global" view="Default view">40b084f347342110a8a67af3836d4348</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-10 10:32:14</sys_created_on>
-            <sys_id>599004f347342110a8a67af3836d4365</sys_id>
+            <sys_created_on>2023-02-10 10:32:41</sys_created_on>
+            <sys_id>0cb084f347342110a8a67af3836d4348</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-10 10:32:14</sys_updated_on>
+            <sys_updated_on>2023-02-10 10:32:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>hp</element>
-            <list_id display_value="x_965810_zombie_citizen" element="NULL" name="x_965810_zombie_citizen" parent="x_965810_zombie_game" relationship="NULL" sys_domain="global" view="Default view">999004f347342110a8a67af3836d4364</list_id>
+            <list_id display_value="x_965810_zombie_zombie" element="NULL" name="x_965810_zombie_zombie" parent="x_965810_zombie_game" relationship="NULL" sys_domain="global" view="Default view">40b084f347342110a8a67af3836d4348</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-10 10:32:14</sys_created_on>
-            <sys_id>dd9004f347342110a8a67af3836d4365</sys_id>
+            <sys_created_on>2023-02-10 10:32:41</sys_created_on>
+            <sys_id>8cb084f347342110a8a67af3836d4348</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-10 10:32:14</sys_updated_on>
+            <sys_updated_on>2023-02-10 10:32:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>kills</element>
-            <list_id display_value="x_965810_zombie_citizen" element="NULL" name="x_965810_zombie_citizen" parent="x_965810_zombie_game" relationship="NULL" sys_domain="global" view="Default view">999004f347342110a8a67af3836d4364</list_id>
+            <list_id display_value="x_965810_zombie_zombie" element="NULL" name="x_965810_zombie_zombie" parent="x_965810_zombie_game" relationship="NULL" sys_domain="global" view="Default view">40b084f347342110a8a67af3836d4348</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-10 10:32:14</sys_created_on>
-            <sys_id>519004f347342110a8a67af3836d4366</sys_id>
+            <sys_created_on>2023-02-10 10:32:41</sys_created_on>
+            <sys_id>00b084f347342110a8a67af3836d4349</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-10 10:32:14</sys_updated_on>
+            <sys_updated_on>2023-02-10 10:32:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element/>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <name>x_965810_zombie_citizen</name>
+            <name>x_965810_zombie_zombie</name>
             <parent>x_965810_zombie_game</parent>
             <position/>
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-10 10:32:14</sys_created_on>
+            <sys_created_on>2023-02-10 10:32:41</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>999004f347342110a8a67af3836d4364</sys_id>
-            <sys_name>x_965810_zombie_citizen</sys_name>
+            <sys_id>40b084f347342110a8a67af3836d4348</sys_id>
+            <sys_name>x_965810_zombie_zombie</sys_name>
             <sys_package display_value="Zombie Apocalypse" source="x_965810_zombie">fbe33ad347302110a8a67af3836d43e8</sys_package>
             <sys_policy/>
             <sys_scope display_value="Zombie Apocalypse">fbe33ad347302110a8a67af3836d43e8</sys_scope>
-            <sys_update_name>sys_ui_list_x_965810_zombie_citizen_x_965810_zombie_game_null</sys_update_name>
+            <sys_update_name>sys_ui_list_x_965810_zombie_zombie_x_965810_zombie_game_null</sys_update_name>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
